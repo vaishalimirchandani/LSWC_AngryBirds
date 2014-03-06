@@ -69,6 +69,8 @@
                     </view>
                     <connections>
                         <outlet property="BombardingArea" destination="fVD-6b-7xD" id="yDj-4n-ixp"/>
+                        <outlet property="angleSlider" destination="KrC-Hl-gL2" id="Rzu-mM-j0g"/>
+                        <outlet property="speedSlider" destination="rA8-ku-jqm" id="YqL-9s-gjY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

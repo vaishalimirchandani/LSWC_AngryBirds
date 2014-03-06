@@ -22,6 +22,7 @@
 		831B905F18C8DB4C00B9A2DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 831B905D18C8DB4C00B9A2DA /* InfoPlist.strings */; };
 		831B906118C8DB4C00B9A2DA /* AngryBirdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906018C8DB4C00B9A2DA /* AngryBirdsTests.m */; };
 		831B906C18C8DF7100B9A2DA /* ABbombardingAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */; };
+		831B906F18C8EBC800B9A2DA /* ABParabolicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906E18C8EBC800B9A2DA /* ABParabolicModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		831B906018C8DB4C00B9A2DA /* AngryBirdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngryBirdsTests.m; sourceTree = "<group>"; };
 		831B906A18C8DF7100B9A2DA /* ABbombardingAreaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABbombardingAreaView.h; sourceTree = "<group>"; };
 		831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABbombardingAreaView.m; sourceTree = "<group>"; };
+		831B906D18C8EBC800B9A2DA /* ABParabolicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABParabolicModel.h; sourceTree = "<group>"; };
+		831B906E18C8EBC800B9A2DA /* ABParabolicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABParabolicModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				831B904B18C8DB4B00B9A2DA /* ABViewController.m */,
 				831B906A18C8DF7100B9A2DA /* ABbombardingAreaView.h */,
 				831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */,
+				831B906D18C8EBC800B9A2DA /* ABParabolicModel.h */,
+				831B906E18C8EBC800B9A2DA /* ABParabolicModel.m */,
 				831B904D18C8DB4C00B9A2DA /* Images.xcassets */,
 				831B903C18C8DB4B00B9A2DA /* Supporting Files */,
 			);
@@ -259,6 +264,7 @@
 				831B906C18C8DF7100B9A2DA /* ABbombardingAreaView.m in Sources */,
 				831B904C18C8DB4B00B9A2DA /* ABViewController.m in Sources */,
 				831B904618C8DB4B00B9A2DA /* ABAppDelegate.m in Sources */,
+				831B906F18C8EBC800B9A2DA /* ABParabolicModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +473,7 @@
 				831B906618C8DB4C00B9A2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		831B906718C8DB4C00B9A2DA /* Build configuration list for PBXNativeTarget "AngryBirdsTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +482,7 @@
 				831B906918C8DB4C00B9A2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

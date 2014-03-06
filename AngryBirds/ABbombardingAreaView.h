@@ -8,6 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+@class ABbombardingAreaView;
+
+@protocol TrajectoryDataSource
+
+- (CGFloat) trajViewStartTime:(ABbombardingAreaView*)tv;
+- (CGFloat) trajViewEndTime:(ABbombardingAreaView*)tv;
+
+- (CGFloat) trajView:(ABbombardingAreaView*)tv heightAt:(CGFloat)time;
+- (CGFloat) trajView:(ABbombardingAreaView*)tv distanceAt:(CGFloat)time;
+
+
+@end
+
 @interface ABbombardingAreaView : UIView
+
+@property (nonatomic) CGFloat targetDistance;
+
+@property (nonatomic, weak) id<TrajectoryDataSource> dataSource;
 
 @end

@@ -8,17 +8,15 @@
 
 #import "ABbombardingAreaView.h"
 
+#define HEIGHT_VIEW 200
+
 @implementation ABbombardingAreaView
 
-/*- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
+- (CGFloat) height2Pixels:(CGFloat)alture{
+    CGFloat h = self.bounds.size.height;
+    return h - alture / HEIGHT_VIEW * h;
+    
 }
-*/
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -26,23 +24,30 @@
 {
     // Drawing code
     
-    UIBezierPath *tray = [UIBezierPath bezierPath];
-    [tray moveToPoint:CGPointMake(0, 0)];
-    CGFloat posX = 10;
-    CGFloat posY = 20;
+    UIBezierPath * traj = [UIBezierPath bezierPath];
     
-    for (CGFloat t = 0; t<10; t+= 0.1) {
+    CGFloat t0 = [self.dataSource trajViewStartTime:self] ;
+    CGFloat t1 = [self.dataSource trajViewEndTime:self] ;
     
-        posX += 5;
-        posY += 3;
+    CGFloat posX = [self.dataSource trajView:self distanceAt:t0];
+    CGFloat posY = [self height2Pixels:[self.dataSource trajView:self heightAt:t0]];
+    
+    //Init trajectory line
+    [traj moveToPoint:CGPointMake(posX, posY)];
+    
+    for (CGFloat t = t0; t<t1; t+= 0.1) {
+    
+        posX = [self.dataSource trajView:self distanceAt:t];
+        posY = [self height2Pixels:[self.dataSource trajView:self heightAt:t]];
         
-        [tray addLineToPoint:CGPointMake(posX, posY)];
+        [traj addLineToPoint:CGPointMake(posX, posY)];
         
     }
     
-    [tray setLineWidth:3];
+    //[traj setLineWidth:3];
+    traj.lineWidth = 3;
     [[UIColor redColor]set];
-    [tray stroke];
+    [traj stroke];
 
 }
 
