@@ -10,6 +10,7 @@
 
 @interface ABViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *BombardingArea;
 @end
 
 @implementation ABViewController
@@ -26,4 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)givenAngle:(UISlider *)sender {
+}
+
+- (IBAction)givenSpeed:(UISlider *)sender {
+}
+
+
+- (IBAction)givenDistance:(UISlider *)sender {
+}
 @end

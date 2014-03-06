@@ -21,6 +21,7 @@
 		831B905718C8DB4C00B9A2DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831B903918C8DB4B00B9A2DA /* UIKit.framework */; };
 		831B905F18C8DB4C00B9A2DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 831B905D18C8DB4C00B9A2DA /* InfoPlist.strings */; };
 		831B906118C8DB4C00B9A2DA /* AngryBirdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906018C8DB4C00B9A2DA /* AngryBirdsTests.m */; };
+		831B906C18C8DF7100B9A2DA /* ABbombardingAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		831B905C18C8DB4C00B9A2DA /* AngryBirdsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AngryBirdsTests-Info.plist"; sourceTree = "<group>"; };
 		831B905E18C8DB4C00B9A2DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		831B906018C8DB4C00B9A2DA /* AngryBirdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AngryBirdsTests.m; sourceTree = "<group>"; };
+		831B906A18C8DF7100B9A2DA /* ABbombardingAreaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABbombardingAreaView.h; sourceTree = "<group>"; };
+		831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABbombardingAreaView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				831B904B18C8DB4B00B9A2DA /* ABViewController.m */,
 				831B904D18C8DB4C00B9A2DA /* Images.xcassets */,
 				831B903C18C8DB4B00B9A2DA /* Supporting Files */,
+				831B906A18C8DF7100B9A2DA /* ABbombardingAreaView.h */,
+				831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */,
 			);
 			path = AngryBirds;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				831B904218C8DB4B00B9A2DA /* main.m in Sources */,
+				831B906C18C8DF7100B9A2DA /* ABbombardingAreaView.m in Sources */,
 				831B904C18C8DB4B00B9A2DA /* ABViewController.m in Sources */,
 				831B904618C8DB4B00B9A2DA /* ABAppDelegate.m in Sources */,
 			);
