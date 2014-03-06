@@ -59,10 +59,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             </label>
-                            <view contentMode="scaleToFill" id="fVD-6b-7xD">
+                            <view contentMode="scaleToFill" id="fVD-6b-7xD" customClass="ABbombardingAreaView">
                                 <rect key="frame" x="20" y="188" width="280" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.78042341217051237" green="1" blue="0.98289582804205733" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
