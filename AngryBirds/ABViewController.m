@@ -13,7 +13,7 @@
 @interface ABViewController () <TrajectoryDataSource>
 
 @property (weak, nonatomic) IBOutlet ABbombardingAreaView *bombardingArea;
-@property (weak, nonatomic) IBOutlet ABParabolicModel *model;
+@property (strong, nonatomic) ABParabolicModel *model;
 
 
 @property (weak, nonatomic) IBOutlet UISlider *angleSlider;
@@ -37,6 +37,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.bombardingArea.dataSource = self;
+    self.model = [[ABParabolicModel alloc] init];
     [self givenSpeed:self.speedSlider];
     [self givenAngle:self.angleSlider];
 }
