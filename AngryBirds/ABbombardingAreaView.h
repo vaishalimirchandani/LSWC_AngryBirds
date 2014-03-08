@@ -25,6 +25,6 @@
 
 @property (nonatomic) CGFloat targetDistance;
 
-@property (nonatomic, weak) id<TrajectoryDataSource> dataSource;
+@property (nonatomic, weak) id <TrajectoryDataSource> dataSource;
 
 @end

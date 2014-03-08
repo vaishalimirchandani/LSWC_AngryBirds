@@ -12,24 +12,24 @@
 
 @implementation ABParabolicModel
 
-- (float) speedXInitial{
+- (float) speedXInitial {
     return self.initialSpeed*cos(self.initialAngle);
 }
 
-- (float) speedYInitial{
+- (float) speedYInitial {
     return self.initialSpeed*sin(self.initialAngle);
 }
 
 
-- (CGFloat) heightAt:(CGFloat)time{
+- (CGFloat) heightAt:(CGFloat)time {
     return [self speedYInitial] * time - (0.5 * EARTH_GRAVITY * time * time);
 }
 
-- (CGFloat) distanceAt:(CGFloat)time{
+- (CGFloat) distanceAt:(CGFloat)time {
     return [self speedXInitial] * time;
 }
 
-- (CGFloat) duration{
+- (CGFloat) duration {
     return 2 * [self speedYInitial] / EARTH_GRAVITY;
 }
 

@@ -10,7 +10,7 @@
 #import "ABbombardingAreaView.h"
 #import "ABParabolicModel.h"
 
-@interface ABViewController ()
+@interface ABViewController () <TrajectoryDataSource>
 
 @property (weak, nonatomic) IBOutlet ABbombardingAreaView *bombardingArea;
 @property (weak, nonatomic) IBOutlet ABParabolicModel *model;
