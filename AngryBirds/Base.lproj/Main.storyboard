@@ -36,7 +36,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="givenAngle:" destination="vXZ-lx-hvc" eventType="valueChanged" id="va3-mc-NcP"/>
-                                    <action selector="given_angle:" destination="vXZ-lx-hvc" eventType="valueChanged" id="W4m-go-HdL"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="rA8-ku-jqm">
@@ -44,7 +43,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="givenSpeed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="uMt-tX-40i"/>
-                                    <action selector="given_speed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="yAH-Cj-mJo"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Uwa-Vd-Vdb">
@@ -68,8 +66,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="BombardingArea" destination="fVD-6b-7xD" id="yDj-4n-ixp"/>
                         <outlet property="angleSlider" destination="KrC-Hl-gL2" id="Rzu-mM-j0g"/>
+                        <outlet property="bombardingArea" destination="fVD-6b-7xD" id="fDB-ie-6iD"/>
                         <outlet property="speedSlider" destination="rA8-ku-jqm" id="YqL-9s-gjY"/>
                     </connections>
                 </viewController>

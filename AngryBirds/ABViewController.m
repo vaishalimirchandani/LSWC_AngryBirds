@@ -48,12 +48,12 @@
 }
 
 - (IBAction)givenAngle:(UISlider *)sender {
-    self.model.initialSpeed = sender.value;
+    self.model.initialAngle = sender.value;
     [self.bombardingArea setNeedsDisplay];
 }
 
 - (IBAction)givenSpeed:(UISlider *)sender {
-    self.model.initialAngle = sender.value;
+    self.model.initialSpeed = sender.value;
     [self.bombardingArea setNeedsDisplay];
 }
 
