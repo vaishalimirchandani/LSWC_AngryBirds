@@ -123,10 +123,10 @@
 				831B904718C8DB4B00B9A2DA /* Main.storyboard */,
 				831B904A18C8DB4B00B9A2DA /* ABViewController.h */,
 				831B904B18C8DB4B00B9A2DA /* ABViewController.m */,
-				831B906A18C8DF7100B9A2DA /* ABbombardingAreaView.h */,
-				831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */,
 				831B906D18C8EBC800B9A2DA /* ABParabolicModel.h */,
 				831B906E18C8EBC800B9A2DA /* ABParabolicModel.m */,
+				831B906A18C8DF7100B9A2DA /* ABbombardingAreaView.h */,
+				831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */,
 				831B904D18C8DB4C00B9A2DA /* Images.xcassets */,
 				831B903C18C8DB4B00B9A2DA /* Supporting Files */,
 			);
