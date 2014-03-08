@@ -35,8 +35,8 @@
     //Init trajectory line
     [traj moveToPoint:CGPointMake(posX, posY)];
     
-    for (CGFloat t = t0; t<t1; t+= 0.1) {
-    
+    for (CGFloat t = t0; t<t1+0.1; t+= 0.1) {
+
         posX = [self.dataSource trajView:self distanceAt:t];
         posY = [self height2Pixels:[self.dataSource trajView:self heightAt:t]];
         
