@@ -13,6 +13,7 @@
 @interface ABViewController () <TrajectoryDataSource>
 
 @property (weak, nonatomic) IBOutlet ABbombardingAreaView *bombardingArea;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) ABParabolicModel *model;
 
 
@@ -35,8 +36,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3bt5"]];
+    [self.containerView addSubview:backgroundView];
+    [self.containerView sendSubviewToBack:backgroundView];
     
     self.bombardingArea.dataSource = self;
+    
     self.model = [[ABParabolicModel alloc] init];
     [self givenSpeed:self.speedSlider];
     [self givenAngle:self.angleSlider];

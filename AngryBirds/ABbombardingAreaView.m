@@ -23,7 +23,7 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    
+
     UIBezierPath * traj = [UIBezierPath bezierPath];
     
     CGFloat t0 = [self.dataSource trajViewStartTime:self] ;
@@ -46,7 +46,7 @@
     
     //[traj setLineWidth:3];
     traj.lineWidth = 3;
-    [[UIColor redColor]set];
+    [[UIColor purpleColor]set];
     [traj stroke];
 
 }
