@@ -22,7 +22,7 @@
 
 
 - (CGFloat) heightAt:(CGFloat)time {
-    return [self speedYInitial] * time - (0.5 * EARTH_GRAVITY * time * time);
+    return [self speedYInitial] * time - (0.5 * self.initialGravity * time * time);
 }
 
 - (CGFloat) distanceAt:(CGFloat)time {
@@ -30,7 +30,7 @@
 }
 
 - (CGFloat) duration {
-    return 2 * [self speedYInitial] / EARTH_GRAVITY;
+    return 2 * [self speedYInitial] / self.initialGravity;
 }
 
 

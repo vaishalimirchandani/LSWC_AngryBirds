@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8301FA7118CF663A009B0C06 /* 3bt5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8301FA7018CF663A009B0C06 /* 3bt5.png */; };
 		831B903618C8DB4B00B9A2DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831B903518C8DB4B00B9A2DA /* Foundation.framework */; };
 		831B903818C8DB4B00B9A2DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831B903718C8DB4B00B9A2DA /* CoreGraphics.framework */; };
 		831B903A18C8DB4B00B9A2DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831B903918C8DB4B00B9A2DA /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		831B906118C8DB4C00B9A2DA /* AngryBirdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906018C8DB4C00B9A2DA /* AngryBirdsTests.m */; };
 		831B906C18C8DF7100B9A2DA /* ABbombardingAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */; };
 		831B906F18C8EBC800B9A2DA /* ABParabolicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 831B906E18C8EBC800B9A2DA /* ABParabolicModel.m */; };
-		A96F142918CE6F0C00385ECE /* 3bt5.png in Resources */ = {isa = PBXBuildFile; fileRef = A96F142818CE6F0C00385ECE /* 3bt5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8301FA7018CF663A009B0C06 /* 3bt5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3bt5.png; path = ../../../Downloads/3bt5.png; sourceTree = "<group>"; };
 		831B903218C8DB4B00B9A2DA /* AngryBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		831B903518C8DB4B00B9A2DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		831B903718C8DB4B00B9A2DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,7 +61,6 @@
 		831B906B18C8DF7100B9A2DA /* ABbombardingAreaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABbombardingAreaView.m; sourceTree = "<group>"; };
 		831B906D18C8EBC800B9A2DA /* ABParabolicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABParabolicModel.h; sourceTree = "<group>"; };
 		831B906E18C8EBC800B9A2DA /* ABParabolicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABParabolicModel.m; sourceTree = "<group>"; };
-		A96F142818CE6F0C00385ECE /* 3bt5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3bt5.png; path = ../../../../Downloads/3bt5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		831B903C18C8DB4B00B9A2DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A96F142818CE6F0C00385ECE /* 3bt5.png */,
+				8301FA7018CF663A009B0C06 /* 3bt5.png */,
 				831B903D18C8DB4B00B9A2DA /* AngryBirds-Info.plist */,
 				831B903E18C8DB4B00B9A2DA /* InfoPlist.strings */,
 				831B904118C8DB4B00B9A2DA /* main.m */,
@@ -243,7 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				831B904E18C8DB4C00B9A2DA /* Images.xcassets in Resources */,
-				A96F142918CE6F0C00385ECE /* 3bt5.png in Resources */,
+				8301FA7118CF663A009B0C06 /* 3bt5.png in Resources */,
 				831B904018C8DB4B00B9A2DA /* InfoPlist.strings in Resources */,
 				831B904918C8DB4B00B9A2DA /* Main.storyboard in Resources */,
 			);

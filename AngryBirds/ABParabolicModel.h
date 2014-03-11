@@ -12,6 +12,7 @@
 
 @property (nonatomic) CGFloat initialSpeed;
 @property (nonatomic) CGFloat initialAngle;
+@property (nonatomic) CGFloat initialGravity;
 
 - (CGFloat) heightAt:(CGFloat)time;
 - (CGFloat) distanceAt:(CGFloat)time;

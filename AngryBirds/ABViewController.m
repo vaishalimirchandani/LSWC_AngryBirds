@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *angleSlider;
 @property (weak, nonatomic) IBOutlet UISlider *speedSlider;
+@property (weak, nonatomic) IBOutlet UISlider *gravitySlider;
 
 @end
 
@@ -45,6 +46,7 @@
     self.model = [[ABParabolicModel alloc] init];
     [self givenSpeed:self.speedSlider];
     [self givenAngle:self.angleSlider];
+    [self givenGravity:self.gravitySlider];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,12 +56,20 @@
 }
 
 - (IBAction)givenAngle:(UISlider *)sender {
+    //initial value is 45º = pi/4
     self.model.initialAngle = sender.value*1.57;
     [self.bombardingArea setNeedsDisplay];
 }
 
 - (IBAction)givenSpeed:(UISlider *)sender {
+    //initial value is 50 m/s
     self.model.initialSpeed = sender.value*100;
+    [self.bombardingArea setNeedsDisplay];
+}
+
+- (IBAction)givenGravity:(UISlider *)sender {
+    //initial value is earth gravity
+    self.model.initialGravity = sender.value*18.16132;
     [self.bombardingArea setNeedsDisplay];
 }
 
